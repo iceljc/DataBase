@@ -1,0 +1,17 @@
+create table a (sid int, name str20)
+create table b (id int, class str20)
+create table c (d int, person str20)
+insert into a(sid, name) values(0, "bob")
+insert into a(sid, name) values(1, "bob")
+insert into a(sid, name) values(2, "bob")
+insert into b(id, class) values(0, "db")
+insert into b(id, class) values(1, "ai")
+insert into b(id, class) values(2, "ml")
+insert into c(d, person) values(0, "a")
+insert into c(d, person) values(1, "b")
+insert into c(d, person) values(2, "c")
+select * from a, b, c
+select * from a, b, c where a.sid = b.id and c.d < b.id
+DROP TABLE a
+DROP TABLE b
+DROP TABLE c

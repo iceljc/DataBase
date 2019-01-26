@@ -1,0 +1,16 @@
+CREATE TABLE course (sid INT, homework INT, project INT, grade STR20)
+INSERT INTO course (sid, homework, project, grade) VALUES (1, 99, 100, "A")
+INSERT INTO course (sid, homework, project, grade) VALUES (1, 98, 100, "A")
+INSERT INTO course (sid, homework, project, grade) VALUES (1, 97, 100, "A")
+INSERT INTO course (sid, homework, project, grade) VALUES (2, 100, 90, "B")
+INSERT INTO course (sid, homework, project, grade) VALUES (3, 100, 80, "C")
+SELECT * FROM course
+CREATE TABLE course2 (sid INT, exam INT, grade STR20)
+INSERT INTO course2 (sid, exam, grade) VALUES (1, 95, "A")
+INSERT INTO course2 (sid, exam, grade) VALUES (1, 94, "A")
+INSERT INTO course2 (sid, exam, grade) VALUES (4, 85, "B")
+INSERT INTO course2 (sid, exam, grade) VALUES (5, 75, "C")
+SELECT * FROM course2
+SELECT * FROM course,course2
+DROP TABLE course
+DROP TABLE course2
